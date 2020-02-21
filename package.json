@@ -1,0 +1,19 @@
+{
+  "name": "annatel_cron_jobs",
+  "version": "1.0.0",
+  "description": "Cron jobs related to Annatel's watch",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "Annatel",
+    "Watch",
+    "Cron"
+  ],
+  "author": "Hillel Saal & Gabriel Elbaz",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.9.1"
+  }
+}
