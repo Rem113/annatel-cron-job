@@ -2,7 +2,13 @@ const mongoose = require("mongoose");
 const action = require("./models/action");
 
 mongoose
-  .connect("mongodb://admin:gabhil@88.218.220.20:9000/Annatel?authSource=admin")
+  .connect(
+    "mongodb://admin:gabhil@88.218.220.20:9000/Annatel?authSource=admin",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    }
+  )
   .catch(err => console.error(err));
 
 const now = Date.now();
