@@ -16,7 +16,7 @@ const nowMinusSevenDays = now - 7 * 24 * 60 * 60 * 1000;
 const formattedDate = new Date().toLocaleString();
 
 action
-  .remove({ insertedAt: { $lte: nowMinusSevenDays } })
+  .deleteMany({ insertedAt: { $lte: nowMinusSevenDays } })
   .then(res =>
     console.log(`[${formattedDate}] Deleted ${res.deletedCount} actions`)
   )
